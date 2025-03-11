@@ -40,7 +40,7 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("DIP");
+    case BTC: return QString("DIP"); //coin name
     case mBTC: return QString("mDIP");
     case uBTC: return QString::fromUtf8("μDIP");
     default: return QString("???");
@@ -51,7 +51,7 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("DiptoCoin");
+    case BTC: return QString("DiptoCoin"); //Name add
     case mBTC: return QString("Milli-DiptoCoin (1 / 1" THIN_SP_UTF8 "000)");
     case uBTC: return QString("Micro-DiptoCoin (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
